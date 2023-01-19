@@ -22,7 +22,7 @@ import moment from "moment";
 function NoteList() {
   // let folder = { notes: [{ id: "1", content: "<p>Learn Golang!</p>" }] };
   const { noteId } = useParams();
-  const { folderId } = useParams();
+  const { folderId } : any = useParams();
   const [activeNoteId, setActiveNoteId] = useState(noteId);
   const data: any = useLoaderData();
   const navigation = useNavigate();

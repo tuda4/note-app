@@ -45,7 +45,7 @@ const PushNotification = () => {
         console.log({ data });
       };
 
-      await new Promise((resolve, reject) => {
+      await new Promise((resolve: any, reject) => {
         client.subscribe(
           {
             query,
