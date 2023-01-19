@@ -12,13 +12,8 @@ export const HomeLoader = async () => {
   return data;
 };
 
-type Props = {
-  params: {
-    folderId: string;
-    noteId: string;
-  };
-};
-export const NoteListLoader = async ({ params: { folderId } }: Props) => {
+
+export const NoteListLoader = async ({ params: { folderId } }: any) => {
   const query = `query Folder($folderId: String!) {
       folder(folderId: $folderId) {
         id
@@ -39,7 +34,7 @@ export const NoteListLoader = async ({ params: { folderId } }: Props) => {
   return data;
 };
 
-export const NoteLoader = async ({ params: { noteId } }: Props) => {
+export const NoteLoader = async ({ params: { noteId } }: any) => {
   const query = `query Note($noteId: String) {
         note(noteId: $noteId) {
           content
