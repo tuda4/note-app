@@ -28,7 +28,6 @@ const FolderList = ({ folders }: Props) => {
             <Link
               key={folder.id}
               to={`folder/${folder.id}`}
-              style={{padding: 1}}
               onClick={() => setActiveFolderId(folder.id)}
             >
               <Card
