@@ -28,9 +28,6 @@ const FolderList = ({ folders }: Props) => {
             <Link
               key={folder.id}
               to={`folder/${folder.id}`}
-              textDecoration="none"
-              _hover={{ textDecoration: "none" }}
-              py={1}
               onClick={() => setActiveFolderId(folder.id)}
             >
               <Card
