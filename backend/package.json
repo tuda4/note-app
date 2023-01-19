@@ -1,0 +1,33 @@
+{
+  "name": "note-app-server",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.mts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "imtuda4",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.3.0",
+    "@graphql-tools/schema": "^9.0.13",
+    "@types/graphql": "^14.5.0",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.4.1",
+    "graphql": "^16.6.0",
+    "graphql-subscriptions": "^2.0.0",
+    "graphql-ws": "^5.11.2",
+    "http": "^0.0.1-security",
+    "mongoose": "^6.8.3",
+    "ws": "^8.12.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.13",
+    "nodemon": "^2.0.20"
+  }
+}
