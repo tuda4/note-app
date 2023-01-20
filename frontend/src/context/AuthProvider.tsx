@@ -18,7 +18,6 @@ const AuthProvider = ({ children }: Props) => {
 
   useEffect(() => {
     const unsubcribed = auth.onIdTokenChanged((user: any) => {
-      console.log("From AuthProvider", { user });
       // save info user
       if (user?.uid) {
         setUser(user);
@@ -32,7 +31,6 @@ const AuthProvider = ({ children }: Props) => {
       }
 
       //  reset info user
-      console.log("reset");
       setIsLoading(false);
       setUser({});
       localStorage.clear();
