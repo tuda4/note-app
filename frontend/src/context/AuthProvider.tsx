@@ -37,7 +37,6 @@ const AuthProvider = ({ children }: Props) => {
       setUser({});
       localStorage.clear();
       navigation("/login");
-      return;
     });
 
     return () => unsubcribed();

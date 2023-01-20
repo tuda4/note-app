@@ -14,6 +14,7 @@ const FolderList = ({ folders }: Props) => {
   const { folderId } = useParams();
   const [activeFolderId, setActiveFolderId] = useState(folderId);
 
+
   return (
     <Container py={2}>
       <Box display="flex" justifyContent="space-around">
@@ -28,7 +29,6 @@ const FolderList = ({ folders }: Props) => {
             <Link
               key={folder.id}
               to={`folder/${folder.id}`}
-              style={{padding: 1}}
               onClick={() => setActiveFolderId(folder.id)}
             >
               <Card
